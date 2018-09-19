@@ -1,4 +1,4 @@
-# java-10-new-features
+# New features from Java 10 and 11
 Code examples to demonstrate the new features from Java 10 and 11 release.
 
 ## New Features
