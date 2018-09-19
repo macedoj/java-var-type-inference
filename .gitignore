@@ -3,6 +3,7 @@
 *.iws
 *.ipr
 *.iml
+**/out
 
 # Gradle files
 .gradle
