@@ -8,8 +8,34 @@ Code examples to demonstrate the new features from Java 10 and 11 release.
 The <code>LocalVariableTypeInference.java</code> class have some code examples to demonstrate 
 the Java 10 capability to infer the local variable type.
 
+**Code exemples:**
+```java
+    var list = new ArrayList<String>();  // infers ArrayList<String>
+```
+
+```java
+    var hashMap = new HashMap<String, String>();  // infers HashMap<String, String>
+```
+
+```java
+    var stringBuilder = new StringBuilder();  // infers StringBuilder()
+```
 
 **Unit test**
+
+```java
+    @Test
+    void localVariableTypeInferenceArrayList() {
+
+        Optional<?> optional = variableTypeInference.localVariableTypeInferenceArrayList();
+        var someObject = optional.isPresent() ? optional.get() : Optional.empty();
+
+        assertAll("localVariableTypeInference",
+                () -> assertThat(someObject, instanceOf(ArrayList.class)),
+                () -> assertNotEquals(someObject, null)
+        );
+    }
+```
 
 
 ___
