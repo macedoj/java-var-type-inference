@@ -1,5 +1,5 @@
 # java-10-new-features
-Code examples to demonstrate the Java 10 and 11 release.
+Code examples to demonstrate the new features from Java 10 and 11 release.
 
 **Features**
 
