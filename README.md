@@ -1,7 +1,9 @@
 # java-10-new-features
 Code examples to demonstrate the new features from Java 10 and 11 release.
 
-**Features**
+## New Features
+
+### Local Variable Type Inference
 
 The <code>LocalVariableTypeInference.java</code> class have some code examples to demonstrate 
 the Java 10 capability to infer the local variable type.
