@@ -10,14 +10,6 @@ addons:
 jdk:
   - openjdk10
 
-env:
-  matrix:
-  - GRADLE_VERSION=default
-  - GRADLE_VERSION=4.10.2
-
-install:
-  - if [[ $GRADLE_VERSION != "default" ]]; then ./gradlew wrapper --gradle-version $GRADLE_VERSION; fi
-
 before_script:
   - sleep 5
   - java --version
