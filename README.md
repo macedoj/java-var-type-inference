@@ -23,6 +23,9 @@ the Java 10 capability to infer the local variable type.
 
 **Unit test**
 
+To ensure TypeInference from Java 10, the <code>LocalVariableTypeInference.java</code> class 
+are fully reviewed by unit tests, that can be found in class <code>HaversineAlgorithmTest.java</code>.
+
 ```java
     @Test
     void localVariableTypeInferenceArrayList() {
@@ -37,6 +40,25 @@ the Java 10 capability to infer the local variable type.
     }
 ```
 
+__
+
+### Run the code
+
+Just open a terminal and paste the commands below:
+
+```gradle
+    gradle clean build --stacktrace
+```
+
+#### For Intellij IDEA
+```gradle
+    gradle clean build cleanidea idea --stacktrace
+```
+
+#### For Eclipse IDE
+```gradle
+    gradle clean build cleaneclipse eclipse --stacktrace
+```
 
 ___
 **License**
