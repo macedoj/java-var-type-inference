@@ -3,9 +3,11 @@ language: java
 jdk:
   - openjdk10
 
+install: gradle wrapper --gradle-version  4.10.2
+
 before_script:
   - sleep 5
   - java --version
-  - gradle -v
+  - gradle --version
 
 script: gradle clean build --stacktrace
