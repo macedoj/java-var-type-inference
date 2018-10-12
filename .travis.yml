@@ -1,13 +1,28 @@
+dist: trusty
+sudo: required
+
 language: java
+
+addons:
+  sonarcloud:
+    organization: "macedoj-github"
 
 jdk:
   - openjdk10
 
-install: gradle wrapper --gradle-version  4.10.2
+env:
+  matrix:
+  - GRADLE_VERSION=default
+  - GRADLE_VERSION=4.10.2
+
+install:
+  - if [[ $GRADLE_VERSION != "default" ]]; then ./gradlew wrapper --gradle-version $GRADLE_VERSION; fi
 
 before_script:
   - sleep 5
   - java --version
   - gradle --version
 
-script: gradle clean build --stacktrace
+script:
+  - ./gradlew clean build --stacktrace
+  - sonar-scanner
