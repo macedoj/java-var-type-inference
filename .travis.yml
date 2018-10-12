@@ -11,9 +11,8 @@ jdk:
   - openjdk10
 
 before_script:
-  - sleep 5
+  - sleep 3
   - java --version
-  - gradle --version
 
 script:
   - ./gradlew clean build --stacktrace
