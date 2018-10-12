@@ -40,8 +40,7 @@ are fully reviewed by unit tests, that can be found in class <code>HaversineAlgo
     }
 ```
 
-__
-
+___
 ### Run the code
 
 Just open a terminal and paste the commands below:
