@@ -1,10 +1,10 @@
 /*
- * The MIT License
- *
- * Copyright 2018, Juliano Macedo.
- * See LICENSE file for details.
- *
+  The MIT License
+
+  Copyright 2018, Juliano Macedo.
+  See LICENSE file for details.
  */
+
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -13,11 +13,16 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Optional;
 
-import static org.hamcrest.Matchers.instanceOf;
-import static org.junit.jupiter.api.Assertions.assertAll;
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
-import static org.hamcrest.MatcherAssert.assertThat;
+import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * <p>
+ *JUnit test for the class {@link LocalVariableTypeInference}.
+ * </p>
+ *
+ * @author Juliano Macedo < @macedoj at GitHub >
+ * @version 0.2
+ */
 class LocalVariableTypeInferenceTest {
 
     private LocalVariableTypeInference variableTypeInference;
@@ -30,22 +35,22 @@ class LocalVariableTypeInferenceTest {
     @Test
     void localVariableTypeInferenceArrayList() {
 
-        Optional<?> optional = variableTypeInference.localVariableTypeInferenceArrayList();
+        var optional = variableTypeInference.localVariableTypeInferenceArrayList();
         var someObject = optional.isPresent() ? optional.get() : Optional.empty();
 
         assertAll("localVariableTypeInference",
-                () -> assertThat(someObject, instanceOf(ArrayList.class)),
+                () -> assertTrue(someObject instanceof ArrayList),
                 () -> assertNotEquals(someObject, null)
         );
     }
 
     @Test
     void localVariableTypeInferenceHashMap() {
-        Optional<?> optional = variableTypeInference.localVariableTypeInferenceHashMap();
+        var optional = variableTypeInference.localVariableTypeInferenceHashMap();
         var someObject = optional.isPresent() ? optional.get() : Optional.empty();
 
         assertAll("localVariableTypeInferenceStream",
-                () -> assertThat(someObject, instanceOf(HashMap.class)),
+                () -> assertTrue(someObject instanceof HashMap),
                 () -> assertNotEquals(someObject, null)
         );
 
@@ -53,11 +58,11 @@ class LocalVariableTypeInferenceTest {
 
     @Test
     void localVariableTypeInferenceStringBuilder() {
-        Optional<?> optional = variableTypeInference.localVariableTypeInferenceStringBuilder();
+        var optional = variableTypeInference.localVariableTypeInferenceStringBuilder();
         var someObject = optional.isPresent() ? optional.get() : Optional.empty();
 
         assertAll("localVariableTypeInferenceIterator",
-                () -> assertThat(someObject, instanceOf(StringBuilder.class)),
+                () -> assertTrue(someObject instanceof StringBuilder),
                 () -> assertNotEquals(someObject, null)
         );
     }

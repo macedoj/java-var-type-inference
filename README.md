@@ -8,7 +8,7 @@ Code examples to demonstrate the new features from Java 10 and 11 release.
 The <code>LocalVariableTypeInference.java</code> class have some code examples to demonstrate 
 the Java 10 capability to infer the local variable type.
 
-**Code exemples:**
+### Code exemples:
 ```java
     var list = new ArrayList<String>();  // infers ArrayList<String>
 ```
@@ -21,22 +21,44 @@ the Java 10 capability to infer the local variable type.
     var stringBuilder = new StringBuilder();  // infers StringBuilder()
 ```
 
-**Unit test**
+### Unit test
 
+To ensure TypeInference from Java 10, the <code>LocalVariableTypeInference.java</code> class 
+are fully reviewed by unit tests, that can be found in class <code>HaversineAlgorithmTest.java</code>.
+
+#### Unit test example:
 ```java
     @Test
     void localVariableTypeInferenceArrayList() {
 
-        Optional<?> optional = variableTypeInference.localVariableTypeInferenceArrayList();
+        var optional = variableTypeInference.localVariableTypeInferenceArrayList();
         var someObject = optional.isPresent() ? optional.get() : Optional.empty();
 
         assertAll("localVariableTypeInference",
-                () -> assertThat(someObject, instanceOf(ArrayList.class)),
+                () -> assertTrue(someObject instanceof ArrayList),
                 () -> assertNotEquals(someObject, null)
         );
     }
 ```
 
+___
+### Run the code
+
+Just open a terminal and paste the commands below:
+
+```gradle
+    gradle clean build --stacktrace
+```
+
+#### For Intellij IDEA
+```gradle
+    gradle clean build cleanidea idea --stacktrace
+```
+
+#### For Eclipse IDE
+```gradle
+    gradle clean build cleaneclipse eclipse --stacktrace
+```
 
 ___
 **License**
