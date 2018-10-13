@@ -3,10 +3,13 @@ Code examples to demonstrate the new features from Java 10 and 11 release.
 
 Develop:
 [![Build Status](https://travis-ci.org/macedoj/java-new-features.svg?branch=develop)](https://travis-ci.org/macedoj/java-new-features)
-[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=macedoj_java-new-features&metric=alert_status)](https://sonarcloud.io/dashboard?id=macedoj_java-new-features)
 
 Master:
-[![Build Status](https://travis-ci.org/macedoj/java-new-features.svg?branch=master)](https://travis-ci.org/macedoj/java-new-features)
+[![Build Status](https://travis-ci.org/macedoj/java-new-features.svg?branch=master)](https://travis-ci.org/macedoj/java-new-features) 
+[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=macedoj_java-new-features&metric=alert_status)](https://sonarcloud.io/dashboard?id=macedoj_java-new-features)
+[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=macedoj_java-new-features&metric=coverage)](https://sonarcloud.io/dashboard?id=macedoj_java-new-features)
+[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=macedoj_java-new-features&metric=sqale_index)](https://sonarcloud.io/dashboard?id=macedoj_java-new-features)
+
 
 ## New Features
 
