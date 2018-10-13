@@ -80,4 +80,6 @@ See LICENSE file for details.
 
 ## References
 
-http://openjdk.java.net/projects/amber/LVTIstyle.html
+* [JDK 10 Project](http://openjdk.java.net/projects/jdk/10/)
+* [JEP 286: Local-Variable Type Inference](http://openjdk.java.net/jeps/286)
+* [Style Guidelines for Local Variable Type Inference in Java](http://openjdk.java.net/projects/amber/LVTIstyle.html)
