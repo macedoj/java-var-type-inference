@@ -1,0 +1,18 @@
+language: java
+dist: trusty
+sudo: required
+
+addons:
+  sonarcloud:
+    organization: "macedoj-github"
+
+jdk:
+  - openjdk10
+
+before_script:
+  - sleep 3
+  - java --version
+
+script:
+  - ./gradlew clean build --stacktrace
+  - sonar-scanner -Dsonar.verbose=true -X

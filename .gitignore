@@ -7,9 +7,6 @@
 
 # Gradle files
 .gradle
-*.bat
-**/gradlew
-**/gradle
 
 # Compiled class file
 *.class
