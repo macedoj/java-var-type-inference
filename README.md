@@ -71,9 +71,13 @@ Just open a terminal and paste the commands below:
 ```
 
 ___
-**License**
+## License
 
 [![License (MIT)](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 
 Copyright 2018, Juliano Macedo.
 See LICENSE file for details.
+
+## References
+
+http://openjdk.java.net/projects/amber/LVTIstyle.html
