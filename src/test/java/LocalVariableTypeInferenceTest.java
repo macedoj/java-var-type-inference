@@ -38,7 +38,7 @@ class LocalVariableTypeInferenceTest {
         var optional = variableTypeInference.localVariableTypeInferenceArrayList();
         var someObject = optional.isPresent() ? optional.get() : Optional.empty();
 
-        assertAll("localVariableTypeInference",
+        assertAll("localVariableTypeInferenceArrayList",
                 () -> assertTrue(someObject instanceof ArrayList),
                 () -> assertNotEquals(someObject, null)
         );
@@ -49,7 +49,7 @@ class LocalVariableTypeInferenceTest {
         var optional = variableTypeInference.localVariableTypeInferenceHashMap();
         var someObject = optional.isPresent() ? optional.get() : Optional.empty();
 
-        assertAll("localVariableTypeInferenceStream",
+        assertAll("localVariableTypeInferenceHashMap",
                 () -> assertTrue(someObject instanceof HashMap),
                 () -> assertNotEquals(someObject, null)
         );
@@ -61,9 +61,21 @@ class LocalVariableTypeInferenceTest {
         var optional = variableTypeInference.localVariableTypeInferenceStringBuilder();
         var someObject = optional.isPresent() ? optional.get() : Optional.empty();
 
-        assertAll("localVariableTypeInferenceIterator",
+        assertAll("localVariableTypeInferenceStringBuilder",
                 () -> assertTrue(someObject instanceof StringBuilder),
                 () -> assertNotEquals(someObject, null)
         );
+    }
+
+    @Test
+    void localVariableTypeInferenceInt() {
+        var optional = variableTypeInference.localVariableTypeInferenceInteger();
+        var someObject = optional.isPresent() ? optional.get() : Optional.empty();
+
+        assertAll("localVariableTypeInferenceInteger",
+                () -> assertTrue(someObject instanceof Integer),
+                () -> assertNotEquals(someObject, null)
+        );
+
     }
 }

@@ -6,6 +6,7 @@
  */
 
 
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Optional;
@@ -20,27 +21,28 @@ import java.util.Optional;
  */
 public class LocalVariableTypeInference {
 
-    public Optional<?> localVariableTypeInferenceArrayList() {
+    public Optional<ArrayList> localVariableTypeInferenceArrayList() {
         var list = new ArrayList<String>();  // infers ArrayList<String>
 
         return Optional.of(list);
     }
 
-    public Optional<?> localVariableTypeInferenceHashMap() {
+    public Optional<HashMap> localVariableTypeInferenceHashMap() {
         var hashMap = new HashMap<String, String>();  // infers HashMap<String, String>
 
         return Optional.of(hashMap);
     }
 
-    public Optional<?> localVariableTypeInferenceStringBuilder() {
+    public Optional<StringBuilder> localVariableTypeInferenceStringBuilder() {
         var stringBuilder = new StringBuilder();  // infers StringBuilder()
 
         return Optional.of(stringBuilder);
     }
 
-    public Optional<?> localVariableTypeInferenceInt() {
+    public Optional<Integer> localVariableTypeInferenceInteger() {
         var intInference = 10;
 
         return Optional.of(intInference);
     }
+
 }
