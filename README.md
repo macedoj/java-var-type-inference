@@ -6,7 +6,7 @@ Develop:
 [![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=macedoj_java-new-features&metric=alert_status)](https://sonarcloud.io/dashboard?id=macedoj_java-new-features)
 
 Master:
-[![Build Status](https://travis-ci.org/macedoj/java-new-features.svg?branch=master)](https://travis-ci.org/macedoj/java-new-features) 
+[![Build Status](https://travis-ci.org/macedoj/java-new-features.svg?branch=master)](https://travis-ci.org/macedoj/java-new-features)
 
 ## New Features
 
