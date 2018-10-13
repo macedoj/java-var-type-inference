@@ -1,6 +1,16 @@
 # New features from Java 10 and 11
 Code examples to demonstrate the new features from Java 10 and 11 release.
 
+Develop:
+[![Build Status](https://travis-ci.org/macedoj/java-new-features.svg?branch=develop)](https://travis-ci.org/macedoj/java-new-features/branches)
+
+Master:
+[![Build Status](https://travis-ci.org/macedoj/java-new-features.svg?branch=master)](https://travis-ci.org/macedoj/java-new-features/branches) 
+[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=macedoj_java-new-features&metric=alert_status)](https://sonarcloud.io/dashboard?id=macedoj_java-new-features)
+[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=macedoj_java-new-features&metric=coverage)](https://sonarcloud.io/dashboard?id=macedoj_java-new-features)
+[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=macedoj_java-new-features&metric=sqale_index)](https://sonarcloud.io/dashboard?id=macedoj_java-new-features)
+
+
 ## New Features
 
 ### Local Variable Type Inference
@@ -61,9 +71,13 @@ Just open a terminal and paste the commands below:
 ```
 
 ___
-**License**
+## License
 
 [![License (MIT)](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 
 Copyright 2018, Juliano Macedo.
 See LICENSE file for details.
+
+## References
+
+http://openjdk.java.net/projects/amber/LVTIstyle.html
