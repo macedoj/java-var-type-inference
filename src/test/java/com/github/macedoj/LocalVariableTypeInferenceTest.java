@@ -1,3 +1,5 @@
+package com.github.macedoj;
+
 /*
   The MIT License
 
