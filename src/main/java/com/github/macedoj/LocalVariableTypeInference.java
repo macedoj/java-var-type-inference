@@ -1,10 +1,11 @@
+package com.github.macedoj;
+
 /*
   The MIT License
 
   Copyright 2018, Juliano Macedo.
   See LICENSE file for details.
  */
-
 
 
 import java.util.ArrayList;
