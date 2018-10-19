@@ -2,6 +2,7 @@ plugins {
     id 'java'
     id 'eclipse' // optional (to generate Eclipse project files)
     id 'idea' // optional (to generate IntelliJ IDEA project files)
+    id 'jacoco'
     id "org.sonarqube" version "2.6.2"
 }
 
@@ -18,4 +19,25 @@ dependencies {
     // JUnit Jupiter API and TestEngine implementation
     testCompile("org.junit.jupiter:junit-jupiter-api:${junitJupiterVersion}")
     testRuntime("org.junit.jupiter:junit-jupiter-engine:${junitJupiterVersion}")
+
+    // Jacoco unit test coverage
+    testCompile group: 'org.jacoco', name: 'org.jacoco.core', version: '0.8.2'
+    testCompile group: 'org.jacoco', name: 'org.jacoco.report', version: '0.8.2'
+}
+
+test {
+    useJUnitPlatform()
+
+    jacoco {
+        append = false
+        destinationFile = file("$buildDir/jacoco/jacocoTest.exec")
+        classDumpDir = file("$buildDir/jacoco/classpathdumps")
+    }
+}
+jacocoTestReport {
+    reports {
+        xml.enabled false
+        csv.enabled false
+        html.destination file("${buildDir}/jacocoHtml")
+    }
 }

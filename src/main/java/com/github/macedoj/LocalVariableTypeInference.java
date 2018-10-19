@@ -7,7 +7,6 @@ package com.github.macedoj;
   See LICENSE file for details.
  */
 
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Optional;
