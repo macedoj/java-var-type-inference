@@ -12,7 +12,7 @@ jdk:
 before_script:
   - sleep 3
   - java --version
-  - gradle -version
+  - gradle --version
 
 script:
   - ./gradlew clean build --stacktrace
