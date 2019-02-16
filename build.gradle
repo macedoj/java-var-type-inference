@@ -1,7 +1,7 @@
 plugins {
     id 'java'
     id 'idea'    // optional (to generate IntelliJ IDEA project files)
-    id 'eclipse' // optional (to generate Eclipse project files)    
+    id 'eclipse' // optional (to generate Eclipse project files)
     id 'jacoco'
     id "org.sonarqube" version "2.7"
 }
@@ -26,6 +26,7 @@ dependencies {
 }
 
 test {
+    
     useJUnitPlatform()
 
     jacoco {
