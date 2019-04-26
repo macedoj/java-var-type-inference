@@ -7,7 +7,7 @@ addons:
     organization: "macedoj-github"
 
 jdk:
-  - openjdk10
+  - openjdk11
 
 before_script:
   - sleep 3

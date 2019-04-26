@@ -1,21 +1,17 @@
-# New features from Java 10 and 11
-Code examples to demonstrate the new features from Java 10 and 11 release.
+# Local Variable Type Inference
+Th local variable type inference is a feature released in Java 10, that enable to developers the possible to skip type declaration when implement local variables.
 
-Master:
 [![Build Status](https://travis-ci.org/macedoj/java-new-features.svg?branch=master)](https://travis-ci.org/macedoj/java-new-features/branches) 
 [![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=macedoj_java-new-features&metric=alert_status)](https://sonarcloud.io/dashboard?id=macedoj_java-new-features)
 [![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=macedoj_java-new-features&metric=coverage)](https://sonarcloud.io/dashboard?id=macedoj_java-new-features)
 [![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=macedoj_java-new-features&metric=sqale_index)](https://sonarcloud.io/dashboard?id=macedoj_java-new-features)
 
 
-## New Features
-
-### Local Variable Type Inference
+## Code examples
 
 The <code>LocalVariableTypeInference.java</code> class have some code examples to demonstrate 
 the Java 10 capability to infer the local variable type.
 
-### Code exemples:
 ```java
     var list = new ArrayList<String>();  // infers ArrayList<String>
 ```
