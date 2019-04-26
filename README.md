@@ -8,9 +8,7 @@ Master:
 [![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=macedoj_java-new-features&metric=sqale_index)](https://sonarcloud.io/dashboard?id=macedoj_java-new-features)
 
 
-## New Features
-
-### Local Variable Type Inference
+## New Feature - Local Variable Type Inference
 
 The <code>LocalVariableTypeInference.java</code> class have some code examples to demonstrate 
 the Java 10 capability to infer the local variable type.
