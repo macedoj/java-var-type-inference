@@ -5,6 +5,8 @@ sudo: required
 addons:
   sonarcloud:
     organization: "macedoj-github"
+    token:
+      secure: SONAR_TOKEN
 
 jdk:
   - openjdk11
