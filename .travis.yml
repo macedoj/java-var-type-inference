@@ -1,9 +1,9 @@
 language: java
-dist: trusty
+install: true
 sudo: required
 
 jdk:
-  - openjdk11
+  - openjdk12
 
 addons:
   sonarcloud:
