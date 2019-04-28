@@ -3,7 +3,7 @@ dist: trusty
 sudo: required
 
 jdk:
-  - openjdk12
+  - openjdk11
 
 addons:
   sonarcloud:
