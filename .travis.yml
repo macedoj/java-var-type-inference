@@ -18,7 +18,7 @@ before_script:
 script:
   - ./gradlew clean build --stacktrace
   - ./gradlew jacocoTestReport
-  - sonar-scanner -Dsonar.verbose=true -X
+  - sonar-scanner -Dsonar.login=SONAR_TOKEN -Dsonar.verbose=true -X
 #  - ./gradlew sonarqube \
 #    -Dsonar.projectKey=macedoj_java-var-type-inference \
 #    -Dsonar.organization=macedoj-github \
