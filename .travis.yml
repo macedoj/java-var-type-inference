@@ -24,4 +24,4 @@ script:
 #    -Dsonar.projectKey=macedoj_java-var-type-inference \
 #    -Dsonar.organization=macedoj-github \
 #    -Dsonar.host.url=https://sonarcloud.io \
-#    -Dsonar.login=SONAR_TOKEN
+#    -Dsonar.login=${SONAR_TOKEN}
